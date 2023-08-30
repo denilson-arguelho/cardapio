@@ -395,7 +395,7 @@
         </div>
     </footer>
 
-    <div class="modal-full" id="modalCarrinho">
+    <div class="modal-full hidden" id="modalCarrinho">
         <div class="m-header">
             <div class="container">
                 <a href="#" class="btn btn-white btn-sm float-right">Fechar</a>
@@ -430,7 +430,7 @@
                     </div>
 
                 </div>
-                <div id="localEntrega" class="row mr-0 ml-0 ">
+                <div id="localEntrega" class="row mr-0 ml-0 hidden">
                     <div class="col-4">
                         <div class="form-group container-cep">
                             <label>CEP:</label>
@@ -511,8 +511,50 @@
 
 
                 </div>
-                <div id="resumoCarrinho" class="row mr-0 ml-0 hidden">
+                <div id="resumoCarrinho" class="row mr-0 ml-0 ">
+                    <div class="col-12">
+                        <p class="title-carrinho-mt-4">
+                            <strong>Itens do pedido:</strong>
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row" id="listaItensResumo">
+                            <div class="col-12 item-carrinho resumo">
+                                <div class="img-produto-resumo">
+                                    <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg">
 
+                                </div>
+                                <div class="dados-produto">
+                                    <p class="title-produto-resumo">
+                                        <strong>Nome do produto</strong>
+                                    </p>
+                                    <p class="price-produto-resumo">
+                                        <strong>R$ 100,00</strong>
+                                    </p>
+                                </div>
+                                <p class="quantidade-produto-resumo">
+                                    x <strong>3 </strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="title-carrinho-mt-4">
+                            <strong>Local da Entrega:</strong>
+                        </p>
+                    </div>
+
+                    <div class="col-12 item-carrinho resumo">
+                        <div class="img-map">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="dados-produto">
+                            <p class="texto-endereco">
+                                <strong id="resumoEndereco">Rua teste, 200, bairro teste</strong>
+                            </p>
+                            <p class="cidade-endereco" id="cidadeEndereco">Cidade-SP / 78999000</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -545,6 +587,8 @@
     <script type="text" src="./js/modernizr-3.5.0.min.js"></script>
     <script type="text" src="./js/bootstrap.min.js"></script>
     <script type="text" src="./js/popper.min.js"></script>
+    <script type="text" src="./js/dados.js"></script>
+    <script type="text" src="./js/app.js"></script>
 </body>
 
 </html>
